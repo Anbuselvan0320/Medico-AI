@@ -295,8 +295,7 @@ st.markdown("""
 # -----------------------------------------------------------------------------
 
 # 🔑 API CONFIGURATION
-api_key = "AIzaSyBnnNvpIWBo4Iz-vqUX1DkmUpO7gcSj3vU"
-genai.configure(api_key=api_key)
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # --- 2. SESSION STATE MANAGEMENT ---
 if 'logged_in' not in st.session_state:
